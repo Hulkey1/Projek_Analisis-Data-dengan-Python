@@ -1,11 +1,9 @@
 # ===============================================================
 #           CREATE DASHBOARD BIKE SHARING USING STREAMLIT       =
 #           ---------------------------------------------       =
-# Nama          : Maulana Kavaldo                               =
-# Email         : alkav.maulana@gmail.com                       =
-# Id Dicoding   : dicoding.com/users/maulanakavaldo/            =
-# Github Pages  : maulanakavaldo.github.io                      =
-# Created       : 28 September 2023                             =
+# Nama          : I Made Krisna Dwi Anantha                     =
+# Email         : madek408@gmail.com                            =
+# Id Dicoding   : mkrisna                                       =
 # ===============================================================
 
 # Import Library
@@ -18,35 +16,11 @@ import plotly.graph_objects as go
 # LOAD DATA
 # ==============================
 
-
-@st.cache_resource
 def load_data():
-    data = pd.read_csv("../dataset/Bike-sharing-dataset/hour.csv")
+    data = pd.read_csv("../Dataset/hour.csv")
     return data
 
-
 data = load_data()
-
-
-# ==============================
-# TITLE DASHBOARD
-# ==============================
-# Set page title
-st.title("Bike Share Dashboard")
-
-# ==============================
-# SIDEBAR
-# ==============================
-st.sidebar.title("Information:")
-st.sidebar.markdown("**• Nama: Maulana Kavaldo**")
-st.sidebar.markdown(
-    "**• Email: [alkav.maulana@gmail.com](alkav.maulana@gmail.com)**")
-st.sidebar.markdown(
-    "**• Dicoding: [maulanakavaldo](https://www.dicoding.com/users/maulanakavaldo/)**")
-st.sidebar.markdown(
-    "**• LinkedIn: [Maulana Kavaldo](https://www.linkedin.com/in/maulana-kavaldo/)**")
-st.sidebar.markdown(
-    "**• Github: [maulanakavaldo](https://maulanakavaldo.github.io/)**")
 
 
 st.sidebar.title("Dataset Bike Share")
